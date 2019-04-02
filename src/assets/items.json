@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Javascript",
+    "subtitle": "Camiseta unisex de manga corta",
+    "colors": [
+      {
+        "name": "Amarilla",
+        "image": "/assets/images/items/javascript/js-amarillo.jpg"
+      },
+      {
+        "name": "Gris plomo",
+        "image": "/assets/images/items/javascript/js-gris-plomo.jpg"
+      },
+      {
+        "name": "Negra",
+        "image": "/assets/images/items/javascript/js-negro.jpg"
+      },
+      {
+        "name": "Verde militar",
+        "image": "/assets/images/items/javascript/js-verde-militar.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Angular Almería",
+    "subtitle": "Camiseta unisex de manga corta",
+    "colors": [
+      {
+        "name": "Azul",
+        "image": "/assets/images/items/angular-almeria/angular-almeria-azul.jpg"
+      },
+      {
+        "name": "Blanca",
+        "image": "/assets/images/items/angular-almeria/angular-almeria-blanco.jpg"
+      },
+      {
+        "name": "Gris plomo",
+        "image": "/assets/images/items/angular-almeria/angular-almeria-gris-plomo.jpg"
+      },
+      {
+        "name": "Gris vigore",
+        "image": "/assets/images/items/angular-almeria/angular-almeria-gris-vigore.jpg"
+      },
+      {
+        "name": "Negra",
+        "image": "/assets/images/items/angular-almeria/angular-almeria-negro.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Javascript",
+    "subtitle": "Camiseta unisex de manga corta",
+    "colors": [
+      {
+        "name": "Azul",
+        "image": "/assets/images/items/supreme/javascript-azul-royal.jpg"
+      },
+      {
+        "name": "Blanca",
+        "image": "/assets/images/items/supreme/javascript-blanco.jpg"
+      },
+      {
+        "name": "Gris plomo",
+        "image": "/assets/images/items/supreme/javascript-gris-plomo.jpg"
+      },
+      {
+        "name": "Gris vigore",
+        "image": "/assets/images/items/supreme/javascript-gris-vigore.jpg"
+      },
+      {
+        "name": "Negra",
+        "image": "/assets/images/items/supreme/javascript-negro.jpg"
+      },
+      {
+        "name": "Rosa",
+        "image": "/assets/images/items/supreme/javascript-rosa.jpg"
+      },
+      {
+        "name": "Verde olivo",
+        "image": "/assets/images/items/supreme/javascript-verde-olivo.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Javascript",
+    "subtitle": "Camiseta de mujer de manga corta",
+    "colors": [
+      {
+        "name": "Azul",
+        "image": "/assets/images/items/supreme/javascript-mujer-azul-royal.jpg"
+      },
+      {
+        "name": "Blanca",
+        "image": "/assets/images/items/supreme/javascript-mujer-blanco.jpg"
+      },
+      {
+        "name": "Gris vigore",
+        "image": "/assets/images/items/supreme/javascript-mujer-gris-vigore.jpg"
+      },
+      {
+        "name": "Negra",
+        "image": "/assets/images/items/supreme/javascript-mujer-negro.jpg"
+      },
+      {
+        "name": "Rosa claro",
+        "image": "/assets/images/items/supreme/javascript-mujer-rosa-claro.jpg"
+      },
+      {
+        "name": "Rosa rosetón",
+        "image": "/assets/images/items/supreme/javascript-mujer-rosa-roseton.jpg"
+      }
+    ]
+  },
+  {
+    "title": "BirrasJS",
+    "subtitle": "Camiseta unisex de manga corta",
+    "colors": [
+      {
+        "name": "Amarilla",
+        "image": "/assets/images/items/jarra/almeriajs-jarra-amarillo.jpg"
+      },
+      {
+        "name": "Blanca",
+        "image": "/assets/images/items/jarra/almeriajs-jarra-king-blanco.jpg"
+      },
+      {
+        "name": "Negra",
+        "image": "/assets/images/items/jarra/almeriajs-jarra-negro.jpg"
+      }
+    ]
+  }
+]

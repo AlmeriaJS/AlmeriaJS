@@ -1,0 +1,19 @@
+<div fxLayout="row wrap" fxLayoutGap="32px grid">
+  <div fxFlex="50" fxFlex.lt-md="100" *ngFor="let item of items">
+    <mat-card [class.mat-elevation-z3]="true">
+      <mat-card-header>
+        <mat-card-title>{{item?.title}}</mat-card-title>
+        <mat-card-subtitle>{{item?.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="item?.selectedColor?.image" [alt]="item?.title + ' ' + item?.selectedColor?.name">
+      <mat-card-content>
+        <ng-container *ngIf="item?.colors.length > 0">
+          <h3>Colores:</h3>
+          <mat-radio-group [(ngModel)]="item.selectedColor">
+            <mat-radio-button *ngFor="let color of item?.colors" [value]="color">{{color?.name}}</mat-radio-button><br>
+          </mat-radio-group>
+        </ng-container>
+      </mat-card-content>
+    </mat-card>      
+  </div>
+</div>

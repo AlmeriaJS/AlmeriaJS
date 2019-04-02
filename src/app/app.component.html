@@ -1,0 +1,64 @@
+<header>
+  <img src="/assets/images/logo.png" alt="Logo">
+</header>
+
+<div class="home">
+
+  <h1>¡Consigue tu camiseta!</h1>
+
+  <section id="sizes">
+    <div class="container">
+      <h3>Colores, tipos y tallas</h3>
+      <p>Todas las camisetas se pueden pedir en modelo unisex o mujer, independientemente de como se muestren en el catálogo.</p>
+      <p>El tallaje es bastante normal, por lo que si normalmente usas una M es muy probable que esta M te siente genial!</p>
+      <p>No obstante podéis utilizar el calculador de tallas para estos modelos de camiseta:</p>
+      <div class="links">
+        <a mat-flat-button color="primary" href="https://www.roly.es/model_CA6550" target="_blank"><mat-icon>link</mat-icon> Camiseta base unisex</a>
+        <a mat-flat-button color="accent" href="https://www.roly.es/model_CA6627" target="_blank"><mat-icon>link</mat-icon> Camiseta base de mujer</a>    
+      </div>
+    </div>
+  </section>
+  
+  <section id="quality">
+    <div class="container">
+      <h3>Estampado de calidad</h3>
+      <img src="/assets/images/angular-almeria1.jpg" alt="Tamaños">
+    </div>
+  </section>
+
+  <section id="price">
+    <div class="container">
+      <h3>Precio y colaboración</h3>
+      <p>Ni AlmeríaJS ni ninguna parte de la organización gana dinero con esto. A modo orientativo, los precios finales de las camisetas oscilarán entre 15€ y 18€. El coste de las mismas puede variar en función del descuento que pueda conseguir el proveedor por volumen de pedido, el cual siempre nos garantiza el mejor precio. El sobrecoste impuesto a cada camiseta es en concepto de ayuda a alguna asociación de bien humanitario, protectora de animales, ...</p>
+      <p>En cada pedido que se organice aparecerá clármente indicado a dónde va cada céntimo, así cómo se va a gestionar el pago, en función del volumen del pedido (no es lo mismo pedir 3 camisetas, que se pueden pagar en la próxima AlmeriaJS, que hacer un pedido de 33 y que al final se te queden 10 colgadas)</p>
+      <p>¡Si tienes especial interés en alguna causa benéfica con la que colaborar no dudes en comentarlo!</p> 
+      <div class="links">
+        <a mat-flat-button color="accent" [href]="'mailto:' + emailAddress + '?subject=' + emailSubject + '&body=' + emailBody"><mat-icon>mail_outline</mat-icon> Envíanos un email</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <div class="container-full">
+      <h3 color="primary">Catálogo</h3>
+      <app-item-list [items]="items"></app-item-list>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <a mat-icon-button color="accent" href="https://www.meetup.com/es-ES/almeriajs" target="_blank">
+        <i class="fab fa-meetup"></i>
+      </a>
+      <a mat-icon-button color="accent" href="https://twitter.com/AlmeriaJs" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a mat-icon-button color="accent" href="https://github.com/AlmeriaJS" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</footer>
