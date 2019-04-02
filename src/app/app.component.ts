@@ -9,7 +9,6 @@ import { AppService } from './app.service';
 export class AppComponent implements OnInit {
   
   items: Object;
-  cart: Object;
   emailAddress: String;
   emailSubject: String;
   emailBody: String;
@@ -17,14 +16,14 @@ export class AppComponent implements OnInit {
   constructor(
     private service: AppService
   ) {
-    this.emailAddress = 'alberto@coderty.com';
-    this.emailSubject= '¡Quiero mi camiseta de AlmeríaJS!';
-    this.emailBody = 'Buenas,\n\nLe he echado el ojo a la';
+    this.emailAddress = 'howdy@albertogomez.dev'; //TODO: ¡No es el email definitivo! Pero hasta que lo tengamos pongo que lleguen aquí.
+    this.emailSubject= encodeURI('¡Quiero mi camiseta de AlmeríaJS!');
+    this.emailBody = encodeURI('Buenas,\n\nLe he echado el ojo a la');
   }
 
   ngOnInit() {
     this.service.getItems().subscribe(items => {
-      // TODO: Hice esto a las 1:30 del Lunes. No vendría mal darle una vuelta... 
+      // TODO: Hice esto a las 1:30. No vendría mal darle una vuelta... 
       let _items = [];
       for(let key in items) {
       _items.push({ ...items[key], selectedColor: items[key].colors[0] || null })
