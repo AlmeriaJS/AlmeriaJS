@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'shirts',
+    path: 'camisetas',
     loadChildren: './shirts/shirts.module#ShirtsModule'
   }
 ];

@@ -1,10 +1,45 @@
+<nav>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <span style=" flex: 1 1 auto; ">
+        <a mat-flat-button [routerLink]="['/']" routerLinkActive="router-link-active" >Inicio</a>
+        <a mat-flat-button [routerLink]="['/camisetas']" routerLinkActive="router-link-active" >Camisetas</a>
+      </span>
+      <span>
+        <a
+          mat-icon-button
+          color="accent"
+          href="https://www.meetup.com/es-ES/almeriajs"
+          target="_blank"
+        >
+          <i class="fab fa-meetup"></i>
+        </a>
+        <a
+          mat-icon-button
+          color="accent"
+          href="https://twitter.com/AlmeriaJs"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          mat-icon-button
+          color="accent"
+          href="https://github.com/AlmeriaJS"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>  
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>    
+</nav>
+
 <header>
   <img src="/assets/images/logo.png" alt="Logo" />
 </header>
 
 <div class="home">
-  <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
-  <a [routerLink]="['/shirts']" routerLinkActive="router-link-active" >Camisetas</a>
   <router-outlet></router-outlet>
 </div>
 
