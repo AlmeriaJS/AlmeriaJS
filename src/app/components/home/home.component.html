@@ -1,0 +1,31 @@
+<h1>¡Hola, Javascripter!</h1>
+
+<section id="home">
+  <div class="container">
+    <p>Te damos la bienvenida a AlmeríaJS.</p>
+    <p>Somos un grupo de apasionados de la tecnología que nos juntamos cada vez que tenemos ocasión para hablar de cualquier tema relacionado con Javascript.</p>
+    <p>Si quieres colaborar de cualquier manera con el grupo, ya sea dando una charla, compartiendo el contenido, o cualquier cosa que se te ocurra, te lo agradecemos.</p>
+    <p style=" text-align: center; ">
+      <a
+        mat-flat-button
+        color="accent"
+        href="mailto:alvaro.quiros@gmail.com?subject=Hola AlmeríaJS"
+      >
+        <mat-icon> link </mat-icon> ¡Envíanos un correo electrónico!
+      </a>
+    </p>
+    <p>
+      Y como nunca tenemos suficientes aprovechamos para hacer camisetas frikis del evento, y con lo que recaudamos intentamos echar una mano a nuestros colegas peludos de Almería haciendo una donación a alguna perrera local. ¡Te animamos a que le eches un ojo a la galería, igual acabas renovando tu armario! 
+    </p>
+    <p style=" text-align: center; ">
+      <a
+        mat-flat-button
+        color="primary"
+        [routerLink]="['/shirts']"
+        routerLinkActive="router-link-active"
+      >
+        <mat-icon>link</mat-icon> Ver las camisetas de AlmeríaJS
+      </a>
+    </p>
+  </div>
+</section>

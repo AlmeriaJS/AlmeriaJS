@@ -1,31 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-import { MatToolbarModule } from '@angular/material/toolbar'; 
-import { MatIconModule } from '@angular/material/icon'; 
-import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatRippleModule } from '@angular/material/core'; 
-import { MatRadioModule } from '@angular/material/radio'; 
-
+import { MatCardModule } from '@angular/material/card';
+import { MatRippleModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
-import { ItemListComponent } from './item-list/item-list.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ItemListComponent
-  ],
+  declarations: [AppComponent, FooterComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule,
     HttpClientModule,
-    FormsModule,
+    AppRoutingModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
@@ -37,4 +36,4 @@ import { ItemListComponent } from './item-list/item-list.component';
   providers: [AppService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
