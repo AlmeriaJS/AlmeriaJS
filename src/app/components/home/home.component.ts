@@ -7,16 +7,13 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
-  constructor(
-    title: Title,
-    meta: Meta
-  ) {
+  constructor(title: Title, meta: Meta) {
     title.setTitle('AlmeríaJS');
     meta.updateTag({
       name: 'description',
-      content: 'Somos un grupo de apasionados de la tecnología que nos juntamos cada vez que tenemos ocasión para hablar de cualquier tema relacionado con Javascript.'
+      content:
+        'Somos un grupo de apasionados de la tecnología que nos juntamos cada vez que ' +
+        'tenemos ocasión para hablar de cualquier tema relacionado con Javascript.'
     });
   }
-
 }

@@ -6,9 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./item-list.component.scss']
 })
 export class ItemListComponent {
-
   @Input() items: Array<any>;
-  
-  constructor() { }
 
+  constructor() {}
 }

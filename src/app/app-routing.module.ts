@@ -6,11 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  },
-  {
-    path: 'camisetas',
-    loadChildren: './shirts/shirts.module#ShirtsModule'
   }
+  // ,
+  // {
+  //   path: 'camisetas',
+  //   loadChildren: './shirts/shirts.module#ShirtsModule'
+  // }
 ];
 
 @NgModule({
