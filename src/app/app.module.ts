@@ -10,7 +10,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { AppService } from './app.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
@@ -30,9 +29,9 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatButtonModule,
     MatRippleModule,
-    MatRadioModule
+    MatRadioModule,
   ],
-  providers: [AppService],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
