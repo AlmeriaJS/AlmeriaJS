@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "almeriajs-t-shirts": {
+    "almeriajs": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/almeriajs-t-shirts",
+            "aot": true,
+            "outputPath": "dist/almeriajs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,6 +55,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -62,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "almeriajs-t-shirts:build"
+            "browserTarget": "almeriajs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "almeriajs-t-shirts:build:production"
+              "browserTarget": "almeriajs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "almeriajs-t-shirts:build"
+            "browserTarget": "almeriajs:build"
           }
         },
         "test": {
@@ -107,7 +112,7 @@
         }
       }
     },
-    "almeriajs-t-shirts-e2e": {
+    "almeriajs-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "almeriajs-t-shirts:serve"
+            "devServerTarget": "almeriajs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "almeriajs-t-shirts:serve:production"
+              "devServerTarget": "almeriajs:serve:production"
             }
           }
         },
@@ -136,5 +141,8 @@
       }
     }
   },
-  "defaultProject": "almeriajs-t-shirts"
+  "defaultProject": "almeriajs",
+  "cli": {
+    "analytics": "c4ac5007-cd97-4540-b9f0-d6f14c1cd99b"
+  }
 }
