@@ -9,17 +9,26 @@ nav {
     .mat-icon-button {
       font-size: 20px;
     }
+    .mat-toolbar-row {
+      height: 100px !important;
+    }
+  }
+  img {
+    width: 100px;
+    max-width: 200px;
   }
 }
 
-header {
+.header {
   color: #fff;
-  text-align: center;
-  background-color: #2196f3;
-  background-image: linear-gradient(120deg, #0276b8, #f2e059);
+  background-color: #575457;
+  background-image: linear-gradient(120deg, #f7b500, #575457);
   padding: 64px 0;
-  img {
-    width: 100%;
-    max-width: 200px;
-  }
+}
+
+.icon {
+  color: #f7b500;
+}
+.mat-flat-button {
+  background-color: transparent !important;
 }
