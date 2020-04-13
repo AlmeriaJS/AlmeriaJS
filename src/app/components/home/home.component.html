@@ -1,50 +1,97 @@
-<h1>¡Hola, Javascripter!</h1>
-
 <section id="home">
   <div class="container">
-    <p>¡Te damos la bienvenida a <b>AlmeríaJS</b>!</p>
-    <p>
-      Somos un grupo de apasionados de la tecnología que nos juntamos (física o virtualmente) cada vez que tenemos
-      ocasión para hablar de cualquier tema relacionado con Javascript, frameworks, librerías, cualquier tipo de
-      herramienta o incluso servicios para explotar nuestas aplicaiones web.
-    </p>
-    <p>
-      Solemos terminar con lo que más nos gusta, networking con 🍻
-    </p>
-    <p>
-      ¡ Este mes cumplimos 3 años 🎂!
-    </p>
-    <p class="links">
-      <a mat-flat-button color="accent" href="https://twitter.com/almeriajs">
-        <span class="fab fa-twitter"></span> Twitter
-      </a>
-      <a mat-flat-button color="accent" href="https://telegram.me/almeriajs">
-        <span class="fab fa-telegram"></span> Telegram
-      </a>
-      <a mat-flat-button color="accent" href="mailto:js@almeria.dev?subject=Hola AlmeríaJS">
-        <span class="fas fa-envelope"></span> js@almeria.dev
-      </a>
-      <a mat-flat-button color="accent" href="https://www.youtube.com/channel/UCSXMOjxELFJfTwQtakD3t6g">
-        <span class="fab fa-youtube"></span> Youtube
-      </a>
-    </p>
-    <h2>¿Quieres dar una charla con nosotros?</h2>
-    <p>
-      No necesitas ser el fundador de un framework con 30k stargazers para poder subirte a un escenario (o enchufarte la
-      webcam) y contarle a la gente alguna herramienta o framework con el que estés trabajando últimamente o esa nueva
-      librería que han publicado en npm.
-    </p>
-    <p>
-      Tampoco es necesario ser un ponentes experimentado para hablar en este grupo, de hecho en estos años 10 personas
-      han dado su primera charla en nuestro grupo.
-    </p>
-    <p>
-      Además os podemos echar una mano a prepararla si no tenéis mucha experiencia.
-    </p>
-    <p style=" text-align: center; ">
-      <a href="https://forms.gle/FNnbFdj3bng2U15A9" mat-flat-button color="primary">
-        <mat-icon>link</mat-icon> Propón una charla
-      </a>
-    </p>
+    <div>
+      <h1>¡Hola, Javascripter!</h1>
+      <p>¡Te damos la bienvenida a <b>AlmeríaJS</b>!</p>
+      <p>
+        Somos un grupo de apasionados de la tecnología que nos juntamos (física o virtualmente) cada vez que tenemos
+        ocasión para hablar de cualquier tema relacionado con Javascript, frameworks, librerías, cualquier tipo de
+        herramienta o incluso servicios para explotar nuestas aplicaiones web.
+      </p>
+      <p>
+        Solemos terminar con lo que más nos gusta, networking con 🍻
+      </p>
+      <p>
+        ¡ Este mes cumplimos 3 años 🎂!
+      </p>
+    </div>
+    <div>
+      <video src="/assets/images/videoJS.mp4" width="100%" height="100%" autoplay loop>
+        Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br />
+        La versión descargable está disponible en <a href="URL">Enlace</a>.
+      </video>
+    </div>
+    <div>
+      <h2>Próximos eventos</h2>
+      <mat-horizontal-stepper #stepper>
+        <ng-template matStepperIcon="edit">
+          <mat-icon>event</mat-icon>
+        </ng-template>
+        <mat-step *ngFor="let talk of talks" [label]="talk.date" state="edit">
+          <mat-card>
+            <mat-card-content>
+              <img [src]="talk.image" alt="cartel del evento" />
+            </mat-card-content>
+
+            <mat-card-actions class="link" *ngIf="talk.link">
+              <a mat-button [href]="talk.link" 
+                >Apúntate al evento en <img src="/assets/images/logos/meetup_logo.png" alt="meetup"
+              /></a>
+            </mat-card-actions>
+          </mat-card>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+    <div>
+      <h2>¿Quieres dar una charla con nosotros?</h2>
+      <p>
+        No necesitas ser el fundador de un framework con 30k stargazers para poder subirte a un escenario (o enchufarte
+        la webcam) y contarle a la gente alguna herramienta o framework con el que estés trabajando últimamente o esa
+        nueva librería que han publicado en npm.
+      </p>
+      <p>
+        Tampoco es necesario ser un ponentes experimentado para hablar en este grupo, de hecho en estos años 10 personas
+        han dado su primera charla en nuestro grupo.
+      </p>
+      <p>
+        Además os podemos echar una mano a prepararla si no tenéis mucha experiencia.
+      </p>
+      <p style="text-align: center;">
+        <a href="https://forms.gle/FNnbFdj3bng2U15A9" mat-flat-button class="span">
+          <mat-icon>link</mat-icon> Propón una charla
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h2>Sponsors y colaboradores</h2>
+      <p>
+        Queremos agradecer a nuestros sponsors el hacer esto posible.
+      </p>
+      <p style="text-align: center;">
+        <a href=" http://coderty.ninja/" mat-flat-button class="logo"
+          ><img src="/assets/images/logos/coderty.png" alt="coderty-logo"
+        /></a>
+        <a href="https://www.digital55.com/" mat-flat-button class="logo"
+          ><img src="/assets/images/logos/digital55.png" alt="digital55-logo"
+        /></a>
+        <a href="https://twenix.es/" mat-flat-button class="logo"
+          ><img src="/assets/images/logos/twenix.png" alt="twenix-logo"
+        /></a>
+        <a href="https://soyun.ninja/" mat-flat-button class="logo"
+          ><img src="/assets/images/logos/soyunninja.png" alt="soyunninja-logo"
+        /></a>
+      </p>
+      <p>
+        Y agradecer por supuesto la colaboración de nuestros queridos amigos de La Oficina, que son los que
+        habitualmente nos invitan a realizar el evento presencial en su local, el cuál debéis visitar si tenéis
+        oportunidad.
+      </p>
+      <p style="text-align: center;">
+        <a href="http://laoficinacultural.org/" mat-flat-button class="logo"
+          ><img src="/assets/images/logos/LaOficina-logo.jpg" alt="LaOficina-logo"
+        /></a>
+      </p>
+    </div>
   </div>
 </section>

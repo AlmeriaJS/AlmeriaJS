@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent, HomeComponent],
@@ -30,6 +31,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatRippleModule,
     MatRadioModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

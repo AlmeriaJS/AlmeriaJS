@@ -1,31 +1,33 @@
 <nav>
   <mat-toolbar>
-    <mat-toolbar-row>
-      <span style=" flex: 1 1 auto; ">
-        <a mat-flat-button [routerLink]="['/']" routerLinkActive="router-link-active">Inicio</a>
+    <mat-toolbar-row class="header">
+      <span style="flex: 1 1 auto;">
+        <a mat-flat-button [routerLink]="['/']" routerLinkActive="router-link-active">
+          <img src="/assets/images/logos/logoJSweb.png" alt="Logo"
+        /></a>
+
         <!-- <a mat-flat-button [routerLink]="['/camisetas']" routerLinkActive="router-link-active" >Camisetas</a> -->
       </span>
       <span>
-        <a mat-icon-button color="accent" href="https://www.meetup.com/es-ES/almeriajs" target="_blank">
+        <a mat-icon-button class="icon" href="https://www.meetup.com/es-ES/almeriajs" target="_blank">
           <i class="fab fa-meetup"></i>
         </a>
-        <a mat-icon-button color="accent" href="https://twitter.com/AlmeriaJs" target="_blank">
+        <a mat-icon-button class="icon" href="https://twitter.com/AlmeriaJs" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
-        <a mat-icon-button color="accent" href="https://github.com/AlmeriaJS" target="_blank">
+        <a mat-icon-button class="icon" href="https://github.com/AlmeriaJS" target="_blank">
           <i class="fab fa-github"></i>
         </a>
-        <a mat-icon-button color="accent" href="https://www.youtube.com/channel/UCSXMOjxELFJfTwQtakD3t6g">
+        <a mat-icon-button class="icon" href="https://www.youtube.com/channel/UCSXMOjxELFJfTwQtakD3t6g">
           <i class="fab fa-youtube"></i>
+        </a>
+        <a mat-icon-button class="icon" href="mailto:js@almeria.dev?subject=Hola AlmeríaJS">
+          <i class="fas fa-envelope"></i>
         </a>
       </span>
     </mat-toolbar-row>
   </mat-toolbar>
 </nav>
-
-<header>
-  <img src="/assets/images/logo.png" alt="Logo" />
-</header>
 
 <div class="home">
   <router-outlet></router-outlet>
